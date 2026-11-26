@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Fotografia além do comum. Foto e vídeo para XV, retrato, eventos e casamentos. Ensaio a partir de R$ 350, casamento a partir de R$ 400, eventos a partir de R$ 300.">
+<meta name="description" content="Fotografia além do comum. Foto e vídeo para XV, retrato, eventos e casamentos. Ensaio a partir de R$ 300, casamento a partir de R$ 400, eventos a partir de R$ 300.">
 <meta name="theme-color" content="#560C12">
 <meta property="og:url" content="https://pavtex.com.br/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Pavtex Fotografia &amp; Filme">
 <meta property="og:title" content="Pavtex Fotografia &amp; Filme">
-<meta property="og:description" content="Fotografia além do comum. Foto e vídeo para XV, retrato, eventos e casamentos. Ensaio a partir de R$ 350, casamento a partir de R$ 400, eventos a partir de R$ 300.">
+<meta property="og:description" content="Fotografia além do comum. Foto e vídeo para XV, retrato, eventos e casamentos. Ensaio a partir de R$ 300, casamento a partir de R$ 400, eventos a partir de R$ 300.">
 <meta property="og:image" content="https://pavtex.com.br/preview.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -209,6 +209,12 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,
 .rv.in{animation:rvin .8s steps(7,end) forwards}
 @keyframes rvin{from{opacity:0;transform:translateY(26px) rotate(-.6deg)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.rv.in{animation:none}}
+.vgrid{display:grid;gap:14px;max-width:560px}
+.vcard{background:var(--card);border:2px solid var(--line);border-radius:20px;padding:18px;box-shadow:5px 5px 0 var(--line)}
+.vcard h3{margin:0 0 4px;font-size:26px}.vcard .vs{margin:0 0 8px;color:var(--mut);font-weight:600}
+.vcard ul{list-style:none;margin:8px 0 16px;padding:0}
+.vcard li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed rgba(86,12,24,.3)}
+.vcard li:last-child{border-bottom:0}.vcard li b{font-size:20px;color:var(--pea)}
 </style>
 </head>
 <body>
@@ -262,8 +268,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,
   </div>
   <p class="sub" id="vazio" style="display:none"></p>
   <div class="grid" id="grid"></div>
-  <span id="valores"></span><div class="price"><div><h3>Ensaio</h3><p class="amt">a partir de R$ 350</p><p>Com um fotógrafo. Transporte à parte, dependendo do lugar.</p></div><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20ensaio." target="_blank" rel="noopener">Pedir orçamento</a></div><div class="price"><div><h3>Casamento</h3><p class="amt">a partir de R$ 400</p><p>Cobertura do seu grande dia. Transporte à parte, dependendo do lugar.</p></div><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20casamento." target="_blank" rel="noopener">Pedir orçamento</a></div><div class="price"><div><h3>Eventos</h3><p class="amt">a partir de R$ 300</p><p>Aniversários, formaturas, shows e festas. Transporte à parte, dependendo do lugar.</p></div><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20evento." target="_blank" rel="noopener">Pedir orçamento</a></div>
-  <p class="sub" style="margin-top:14px">XV e pacote com os dois fotógrafos: valores pelo WhatsApp. <a href="https://wa.me/5547989190499?text=Oi!%20Quero%20saber%20os%20valores%20e%20pacotes." target="_blank" rel="noopener" style="color:var(--pea);font-weight:600">Pedir valores</a></p>
+  <span id="valores"></span><div class="vgrid"><div class="vcard"><h3>Ensaio</h3><ul><li><span>1 fotógrafo</span><b>R$ 300</b></li><li><span>2 fotógrafos</span><b>R$ 350</b></li></ul><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20ensaio." target="_blank" rel="noopener">Pedir orçamento</a></div><div class="vcard"><h3>Casamento</h3><p class="vs">Com 2 fotógrafos</p><ul><li><span>2 horas</span><b>R$ 400</b></li><li><span>4 horas</span><b>R$ 600</b></li><li><span>8 a 10 horas</span><b>R$ 1.200</b></li></ul><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20casamento." target="_blank" rel="noopener">Pedir orçamento</a></div><div class="vcard"><h3>XV anos</h3><p class="vs">Com 2 fotógrafos</p><ul><li><span>2 horas</span><b>R$ 400</b></li><li><span>4 horas</span><b>R$ 600</b></li><li><span>8 a 12 horas</span><b>R$ 1.200</b></li></ul><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20XV." target="_blank" rel="noopener">Pedir orçamento</a></div><div class="vcard"><h3>Eventos</h3><ul><li><span>a partir de</span><b>R$ 300</b></li></ul><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20evento." target="_blank" rel="noopener">Pedir orçamento</a></div></div><p class="sub" style="margin:10px 0 0">Transporte à parte, de acordo com o local.</p>
+  <p class="sub" style="margin-top:14px">Outras durações, vídeo ou pacote sob medida: valores pelo WhatsApp. <a href="https://wa.me/5547989190499?text=Oi!%20Quero%20saber%20os%20valores%20e%20pacotes." target="_blank" rel="noopener" style="color:var(--pea);font-weight:600">Pedir valores</a></p>
 </section>
 
 <section id="historia"><h2>Nossa história</h2>
@@ -288,13 +294,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,
 <section id="depo" style="display:none"><h2>Quem já fez com a gente</h2><div id="depl" class="depl"></div></section>
 
 <section id="simular"><h2>Simule seu orçamento</h2><p class="sub">Escolha o tipo de evento e quantos fotógrafos. Você vê o valor inicial e manda o resumo pelo WhatsApp.</p>
-<div class="simbox"><label>Tipo de evento<select id="stipo"><option>Ensaio</option><option>Casamento</option><option>Evento</option><option>XV</option></select></label>
+<div class="simbox"><label>Tipo de evento<select id="stipo"><option>Ensaio</option><option>Casamento</option><option>XV</option><option>Evento</option></select></label>
+<label id="sdw" style="display:none">Duração<select id="sdur"><option value="2">2 horas</option><option value="4">4 horas</option><option value="8">8 horas ou mais</option></select></label>
 <div class="chips" id="sqtd" role="group" aria-label="Quantos fotógrafos"><button type="button" class="chip" aria-pressed="true" data-q="1">1 fotógrafo</button><button type="button" class="chip" aria-pressed="false" data-q="2">Os 2 fotógrafos</button></div>
 <p class="amt" id="sval"></p><p class="sub" id="snota" style="margin:0 0 14px"></p><a class="btn" id="szap" href="#" target="_blank" rel="noopener">Mandar pelo WhatsApp</a></div></section>
 
 <section id="faq"><h2>Perguntas frequentes</h2>
 <details><summary>Em quanto tempo recebo as fotos?</summary><p>O prazo depende do tipo de evento e da quantidade de fotos. Combinamos a data de entrega com você antes de fechar.</p></details>
-<details><summary>O transporte é cobrado?</summary><p>Ensaio a partir de R$ 350, casamento a partir de R$ 400 e eventos a partir de R$ 300. O transporte entra à parte, de acordo com o local. Passamos o valor certinho pelo WhatsApp.</p></details>
+<details><summary>O transporte é cobrado?</summary><p>Ensaio: R$ 300 com 1 fotógrafo ou R$ 350 com 2. Casamento e XV, com 2 fotógrafos: R$ 400 (2 horas), R$ 600 (4 horas) e R$ 1.200 (8 horas ou mais). Eventos a partir de R$ 300. O transporte entra à parte, de acordo com o local, e passamos o valor certinho pelo WhatsApp.</p></details>
 <details><summary>Como funciona o pagamento?</summary><p>Combinamos tudo pelo WhatsApp, junto com a data e o pacote. Nada de surpresa no final.</p></details>
 <details><summary>Vale a pena chamar os dois fotógrafos?</summary><p>Vale, principalmente em casamento e XV. Com dois fotógrafos, mais momentos são captados ao mesmo tempo e você recebe mais fotos, melhor distribuídas.</p></details>
 <details><summary>E se eu precisar remarcar?</summary><p>É só avisar com antecedência pelo WhatsApp que a gente encontra outra data junto com você.</p></details>
@@ -465,12 +472,18 @@ v.addEventListener("click",function(){v.paused?go():v.pause()})})();
  if(a)document.getElementById("hv1").src=a.src;if(b)document.getElementById("hv2").src=b.src;
  var tp=document.getElementById("topo");window.addEventListener("scroll",function(){tp.classList.toggle("on",window.scrollY>700&&!document.getElementById("pg").offsetHeight)},{passive:true});
  tp.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};
- var BASE={"Ensaio":350,"Casamento":400,"Evento":300},q=1,st=document.getElementById("stipo");
- function sim(){var t=st.value,v=document.getElementById("sval"),n=document.getElementById("snota"),base=BASE[t],txt;
-  if(base&&q===1){v.textContent="a partir de R$ "+base;n.textContent="Transporte à parte, dependendo do local."}
-  else{v.textContent="Valor pelo WhatsApp";n.textContent=t==="XV"?"O XV tem valor combinado direto com a gente.":"O valor com os dois fotógrafos é combinado direto com a gente."}
-  txt="Oi! Vi o site e quero um orçamento. Tipo: "+t+". Fotógrafos: "+(q===1?"1":"os 2")+".";
+ var q=1,st=document.getElementById("stipo"),sd=document.getElementById("sdur");
+ var TAB={"Ensaio":{1:300,2:350},"Casamento":{2:{2:400,4:600,8:1200}},"XV":{2:{2:400,4:600,8:1200}}};
+ function sim(){var t=st.value,v=document.getElementById("sval"),n=document.getElementById("snota"),dur=(t==="Casamento"||t==="XV"),val=null,txt;
+  document.getElementById("sdw").style.display=dur?"":"none";
+  if(t==="Ensaio")val="R$ "+TAB.Ensaio[q];
+  else if(dur&&q===2)val="R$ "+TAB[t][2][sd.value].toLocaleString("pt-BR");
+  else if(t==="Evento"&&q===1)val="a partir de R$ 300";
+  if(val){v.textContent=val;n.textContent=(dur?(t==="Casamento"?"Até 10 horas no casamento. ":"Até 12 horas no XV. ")+"Mais que isso, combinamos pelo WhatsApp. ":"")+"Transporte à parte, de acordo com o local."}
+  else{v.textContent="Valor pelo WhatsApp";n.textContent=dur?"Para "+t+" os valores acima são com os 2 fotógrafos. Com 1 fotógrafo, a gente combina direto.":"Esse valor a gente combina direto."}
+  txt="Oi! Vi o site e quero um orçamento. Tipo: "+t+(dur?" ("+sd.options[sd.selectedIndex].text+")":"")+". Fotógrafos: "+(q===1?"1":"os 2")+".";
   document.getElementById("szap").href="https://wa.me/5547989190499?text="+encodeURIComponent(txt)}
+ sd.onchange=sim;
  st.onchange=sim;document.querySelectorAll("#sqtd .chip").forEach(function(c){c.onclick=function(){q=+c.dataset.q;document.querySelectorAll("#sqtd .chip").forEach(function(k){k.setAttribute("aria-pressed",k===c)});sim()}});sim();
  if("IntersectionObserver"in window&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});

@@ -316,6 +316,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,
       <div class="chips" id="opts"><button type="button" class="chip" aria-pressed="false" data-n="Pavão">Pavão</button><button type="button" class="chip" aria-pressed="false" data-n="Texugo">Texugo</button></div>
       <button type="button" class="btn alt" id="todos3">Quero os dois</button>
       <p class="sub" id="resumo" style="margin:10px 0 0"></p></fieldset>
+    <label id="emailw" style="display:none">Seu e-mail (para a confirmação)<input type="email" name="email" autocomplete="email" maxlength="120"></label>
+    <input type="text" name="site" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0">
     <label>Local do evento<input name="local" placeholder="Cidade ou endereço" autocomplete="off"></label>
     <div class="row">
       <label>Data<input type="date" name="data" required></label>
@@ -386,8 +388,11 @@ document.getElementById("f").onsubmit=function(e){e.preventDefault();
   var o=document.getElementById("ok");o.style.display="block";o.textContent=t+"\n\nAbrindo o WhatsApp. Se não abrir, toque no botão.";
   var a=document.createElement("a");a.className="btn";a.href=u;a.target="_blank";a.rel="noopener";a.style.marginTop="12px";a.textContent="Enviar pelo WhatsApp";
   o.appendChild(document.createElement("br"));o.appendChild(a);
+  if(AGENDA_URL){try{fetch(AGENDA_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({nome:v.get("nome"),email:v.get("email"),tipo:v.get("tipo"),fotografos:quem(),pacote:pacTxt(),local:v.get("local"),data:v.get("data"),hora:v.get("hora"),convidados:n,site:v.get("site")})})}catch(x){}
+    o.insertAdjacentHTML("afterbegin","<b>Pedido enviado!</b> Quando a gente confirmar, você recebe um e-mail e o dia fica reservado.<br><br>")}
   try{window.open(u,"_blank","noopener")}catch(x){}};
-var bloqueados=["2027-01-30"]; // dias reservados, formato AAAA-MM-DD
+var AGENDA_URL=""; // cole aqui o link /exec do Google Apps Script (veja o guia)
+var bloqueados=["2027-01-30"]; // dias reservados, formato AAAA-MM-DD (somados aos da agenda)
 var dtIn=document.querySelector("[name=data]");dtIn.min=new Date().toISOString().slice(0,10);
 dtIn.onchange=function(){var b=bloqueados.indexOf(dtIn.value)>-1;dtIn.setCustomValidity(b?"Esse dia já está reservado. Escolha outra data.":"");if(b)dtIn.reportValidity()};
 var lb=document.getElementById("lb"),lbi=document.getElementById("lbi"),lbL=[],lbI=0,tx0=0;
@@ -400,9 +405,11 @@ lb.onclick=function(e){if(e.target===lb)lb.close()};
 document.addEventListener("keydown",function(e){if(!lb.open)return;if(e.key==="ArrowLeft")lbShow(lbI-1);if(e.key==="ArrowRight")lbShow(lbI+1)});
 lb.addEventListener("touchstart",function(e){tx0=e.touches[0].clientX},{passive:true});
 lb.addEventListener("touchend",function(e){var d=e.changedTouches[0].clientX-tx0;if(Math.abs(d)>50)lbShow(lbI+(d<0?1:-1))});
-function indis(){if(!bloqueados.length)return;var r=document.createElement("p");r.className="sub";r.style.margin="0";r.textContent="Dias já reservados: "+bloqueados.map(function(d){return d.split("-").reverse().slice(0,2).join("/")}).join(", ");dtIn.closest(".row").after(r)}
+function indis(){var old=document.getElementById("resv");if(old)old.remove();if(!bloqueados.length)return;var r=document.createElement("p");r.id="resv";r.className="sub";r.style.margin="0";r.textContent="Dias já reservados: "+bloqueados.map(function(d){return d.split("-").reverse().slice(0,2).join("/")}).join(", ");dtIn.closest(".row").after(r)}
 indis();
 draw("todas");
+if(AGENDA_URL){var em=document.getElementById("emailw");em.style.display="";em.querySelector("input").required=true;
+ try{fetch(AGENDA_URL).then(function(r){return r.json()}).then(function(j){(j.blocked||[]).forEach(function(d){if(bloqueados.indexOf(d)<0)bloqueados.push(d)});indis()}).catch(function(){})}catch(x){}}
 // Dados de cada fotógrafo: preencha insta (ex.: "@fulano") e bio (frase curta). Em branco, não aparece.
 var PERFIL={"Pavão":{insta:"@oguricriativo",bio:"Fotografar é rezar com os olhos: enxergar a graça onde ela mora e guardá-la pra sempre. Que cada foto seja um agradecimento.",cor:"#560C12"},"Texugo":{insta:"@texugo254",bio:"Cada rosto é obra de Deus, e eu só chego perto o bastante pra ver. Foto boa nasce de olhar com respeito e com fé.",cor:"#8E2433"}};
 var ARTES=[{"c": "Design gráfico", "r": 0.8, "g": "#10292a", "src": "a/34.jpg"}, {"c": "Design gráfico", "r": 0.794, "g": "#10292a", "src": "a/35.jpg"}, {"c": "Design gráfico", "r": 0.562, "g": "#10292a", "src": "a/36.jpg"}, {"c": "Design gráfico", "r": 0.562, "g": "#10292a", "src": "a/37.jpg"}, {"c": "Design gráfico", "r": 0.778, "g": "#10292a", "src": "a/38.jpg"}];

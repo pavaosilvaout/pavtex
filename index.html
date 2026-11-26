@@ -220,6 +220,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,
 html,body{overflow-x:hidden;max-width:100%;overscroll-behavior-x:none}body{touch-action:pan-y pinch-zoom}nav,.tabs,.chips{touch-action:pan-x pan-y;overscroll-behavior-x:contain}.wrap,.hero{overflow-x:clip}
 .wrap,.hero{overflow-x:visible!important}.tabs{position:static!important;flex-wrap:wrap;justify-content:center;overflow:visible!important;background:transparent!important;border:0!important;padding:6px 0 0!important;gap:8px}.tabs button{padding:9px 15px;font-size:14px;background:var(--bg);backdrop-filter:blur(6px)}.tabs button[aria-selected=true]{background:var(--wine,#5a0f1c)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo{background:#FFF1EC;filter:drop-shadow(0 0 14px rgba(238,142,150,.55)) drop-shadow(0 3px 0 rgba(238,142,150,.9))}}:root[data-theme="dark"] .logo{background:#FFF1EC;filter:drop-shadow(0 0 14px rgba(238,142,150,.55)) drop-shadow(0 3px 0 rgba(238,142,150,.9))}
+.cform{display:grid;gap:8px;max-width:420px}.cform label{font-weight:700}.cform input{font:inherit;font-size:18px;padding:14px;border-radius:14px;border:2px solid var(--line);background:var(--card);color:var(--fg);text-transform:uppercase;letter-spacing:.04em}.cform input:focus{outline:3px solid var(--pea);outline-offset:2px}
 </style>
 </head>
 <body>
@@ -241,7 +242,7 @@ html,body{overflow-x:hidden;max-width:100%;overscroll-behavior-x:none}body{touch
   <div class="art"><div class="pols"><figure class="pol a"><img alt=""></figure><figure class="pol b"><img alt=""></figure><figure class="pol c"><img alt=""></figure></div><svg class="pet" viewBox="0 0 100 100" style="left:-9%;top:-7%;--s:56px;--r:-28deg"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="right:-7%;top:-9%;--s:48px;--r:38deg"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="right:6%;bottom:-8%;--s:40px;--r:112deg"><use href="#pet"/></svg></div>
 </header>
 
-<div class="tabs" id="tabs" role="tablist" aria-label="Seções do site"><button role="tab" data-t="inicio" aria-selected="true">Início</button><button role="tab" data-t="fotos" aria-selected="false">Fotos</button><button role="tab" data-t="valores" aria-selected="false">Valores</button><button role="tab" data-t="aval" aria-selected="false">Avaliações</button><button role="tab" data-t="duvidas" aria-selected="false">Dúvidas</button></div>
+<div class="tabs" id="tabs" role="tablist" aria-label="Seções do site"><button role="tab" data-t="inicio" aria-selected="true">Início</button><button role="tab" data-t="fotos" aria-selected="false">Fotos</button><button role="tab" data-t="valores" aria-selected="false">Valores</button><button role="tab" data-t="aval" aria-selected="false">Avaliações</button><button role="tab" data-t="duvidas" aria-selected="false">Dúvidas</button><button role="tab" data-t="entrega" aria-selected="false">Minhas fotos</button></div>
 
 <section id="sobre" data-tab="inicio">
   <h2>O que a gente faz</h2>
@@ -318,6 +319,10 @@ html,body{overflow-x:hidden;max-width:100%;overscroll-behavior-x:none}body{touch
 <details><summary>Quantas fotos eu recebo?</summary><p>Depende do pacote que você escolher. Fale com a gente pelo WhatsApp que a gente explica certinho.</p></details>
 <details><summary>Vocês também fazem vídeo?</summary><p>Sim, somos Fotografia &amp; Filme. Só vídeo: R$ 200 por hora de gravação mais R$ 150 de edição. Para foto e vídeo juntos, fale com a gente no WhatsApp.</p></details>
 </section>
+
+<section id="entrega" data-tab="entrega"><h2>Minhas fotos</h2><p class="sub">Já fez o seu evento com a gente? Digite o código que mandamos no WhatsApp para abrir as suas fotos.</p>
+<form id="cf" class="cform" autocomplete="off"><label for="cod">Seu código</label><input id="cod" inputmode="text" autocapitalize="characters" placeholder="Exemplo: MARIANA-48210" maxlength="40" required><button class="btn" type="submit">Abrir minhas fotos</button></form>
+<p class="sub" id="cmsg" role="status" aria-live="polite"></p><div id="cok" class="vpag" style="display:none"><h3 id="cnome"></h3><p>Suas fotos estão prontas. Para baixar tudo de uma vez, abra a pasta, toque nos três pontinhos e escolha Baixar.</p><a class="btn" id="clink" href="#" target="_blank" rel="noopener noreferrer">Abrir a pasta de fotos</a></div></section>
 
 <section id="marcar"><h2>Bora marcar?</h2><p class="sub">Escolha um ou os dois fotógrafos. Com os dois, mais momentos são captados.</p><a class="btn" href="#agendar">Marcar meu evento</a></section>
 
@@ -506,6 +511,14 @@ v.addEventListener("click",function(){v.paused?go():v.pause()})})();
 var TABS=document.getElementById("tabs"),cur="inicio";
 function setTab(t,sc){cur=t;[].forEach.call(document.querySelectorAll("section[data-tab]"),function(s){s.classList.toggle("taboff",s.getAttribute("data-tab")!==t)});[].forEach.call(TABS.querySelectorAll("button"),function(b){b.setAttribute("aria-selected",b.getAttribute("data-t")===t?"true":"false")});try{var b=TABS.querySelector('[aria-selected=true]');b.scrollIntoView({inline:"center",block:"nearest"})}catch(e){}if(sc&&TABS.getBoundingClientRect().top<=1){var f=document.querySelector("section[data-tab]:not(.taboff)");if(f)f.scrollIntoView()}}
 TABS.onclick=function(e){var b=e.target.closest("button");if(b)setTab(b.getAttribute("data-t"),1)};
+document.getElementById("cf").onsubmit=function(ev){ev.preventDefault();var c=document.getElementById("cod").value.toUpperCase().replace(/\s+/g,""),m=document.getElementById("cmsg"),ok=document.getElementById("cok");ok.style.display="none";
+ if(!AGENDA_URL){m.textContent="Essa área ainda não está ativa. Chama a gente no WhatsApp que a gente manda as suas fotos.";return}
+ m.textContent="Procurando...";
+ fetch(AGENDA_URL+"?codigo="+encodeURIComponent(c)).then(function(r){return r.json()}).then(function(j){
+  if(j&&j.ok&&/^https:\/\//.test(j.link)){m.textContent="";document.getElementById("cnome").textContent="Oi, "+j.nome+"!";document.getElementById("clink").href=j.link;ok.style.display=""}
+  else m.textContent=j&&j.espera?"Muitas tentativas. Espere uns minutos ou chame a gente no WhatsApp.":"Não achei esse código. Confira se digitou igual ao que a gente mandou, ou chame a gente no WhatsApp."
+ }).catch(function(){m.textContent="Não deu para conectar agora. Tente de novo em instantes ou chame a gente no WhatsApp."})};
+
 setTab("inicio");
 
 route();

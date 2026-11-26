@@ -414,7 +414,7 @@ document.getElementById("f").onsubmit=function(e){e.preventDefault();
   if(AGENDA_URL){try{fetch(AGENDA_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify({nome:v.get("nome"),email:v.get("email"),tipo:v.get("tipo"),fotografos:quem(),pacote:pacTxt(),local:v.get("local"),data:v.get("data"),hora:v.get("hora"),convidados:n,site:v.get("site")})})}catch(x){}
     o.insertAdjacentHTML("afterbegin","<b>Pedido enviado!</b> Quando a gente confirmar, você recebe um e-mail e o dia fica reservado.<br><br>")}
   try{window.open(u,"_blank","noopener")}catch(x){}};
-var AGENDA_URL="https://script.google.com/macros/s/AKfycbwGnb3cbO0HfVHvARsY-PnIjtQ3FHwjah6at3WPevpkv-HglyisqeAwApRQ0rW1PaB9Lw/exec"; // cole aqui o link /exec do Google Apps Script (veja o guia)
+var AGENDA_URL="https://script.google.com/macros/s/AKfycbwCbJIkWugzcuwmsG2H2df-ZWHmrfItgYVlzJoTx68_yGKeGlZlioVOLBZHU2hKWoi0/exec"; // cole aqui o link /exec do Google Apps Script (veja o guia)
 var bloqueados=["2027-01-30"]; // dias reservados, formato AAAA-MM-DD (somados aos da agenda)
 var dtIn=document.querySelector("[name=data]");dtIn.min=new Date().toISOString().slice(0,10);
 dtIn.onchange=function(){var b=bloqueados.indexOf(dtIn.value)>-1;dtIn.setCustomValidity(b?"Esse dia já está reservado. Escolha outra data.":"");if(b)dtIn.reportValidity()};

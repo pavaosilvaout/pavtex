@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Fotografia além do comum. Foto e vídeo para XV, retrato, eventos e casamentos. Ensaio a partir de R$ 350, casamento a partir de R$ 400, eventos a partir de R$ 300.">
+<meta name="theme-color" content="#560C12">
+<meta property="og:url" content="https://pavtex.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Pavtex Fotografia &amp; Filme">
+<meta property="og:title" content="Pavtex Fotografia &amp; Filme">
+<meta property="og:description" content="Fotografia além do comum. Foto e vídeo para XV, retrato, eventos e casamentos. Ensaio a partir de R$ 350, casamento a partir de R$ 400, eventos a partir de R$ 300.">
+<meta property="og:image" content="https://pavtex.com.br/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<title>Pavtex Fotografia &amp; Filme</title>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:wght@400;600;800&family=Permanent+Marker&family=Cormorant+Garamond:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7EDE9;--fg:#3a0a0f;--mut:#6b3a3f;--pea:#560C12;--gold:#CF6769;--card:#FFF8F5;--line:#560C12;--inv:#F7EDE9;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a0a0e;--fg:#F7EDE9;--mut:#e3c3bf;--pea:#E58A92;--gold:#F0B6AC;--card:#3a1117;--line:#E58A92;--inv:#2a0a0e}}
+:root[data-theme="dark"]{--bg:#2a0a0e;--fg:#F7EDE9;--mut:#e3c3bf;--pea:#E58A92;--gold:#F0B6AC;--card:#3a1117;--line:#E58A92;--inv:#2a0a0e}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16px/1.6 Nunito,system-ui,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;line-height:1.05;margin:0}
+h2{font-size:clamp(32px,6vw,46px);margin-bottom:8px}
+section{padding:56px 0}
+.sub{color:var(--mut);margin:0 0 28px;max-width:52ch}
+nav{display:flex;gap:18px;justify-content:flex-end;padding:16px 0;font-size:14px}
+nav a{color:var(--fg);text-decoration:none}
+nav a:hover{color:var(--pea)}
+.hero{display:grid;gap:28px;align-items:center;padding:24px 0 48px}
+@media(min-width:760px){.hero{grid-template-columns:1.2fr 1fr}}
+.hero h1{font-size:clamp(46px,12vw,96px);letter-spacing:-.02em}
+.hero p{font-size:19px;max-width:34ch;margin:14px 0 24px}
+.feather{aspect-ratio:1;max-width:340px;width:100%;justify-self:center;border-radius:50% 50% 50% 50%/62% 62% 38% 38%;border:4px solid var(--fg);background:radial-gradient(ellipse 22% 30% at 50% 44%,#560C12 0 55%,#E9808A 56% 62%,transparent 63%),radial-gradient(ellipse 42% 52% at 50% 46%,#8E2433 0 58%,#F3C2BA 59% 74%,transparent 75%),radial-gradient(ellipse 60% 74% at 50% 48%,#E9808A 0 52%,#560C12 53% 100%);box-shadow:8px 8px 0 var(--fg)}
+.btn{display:inline-block;background:var(--pea);color:var(--inv);border:0;border-radius:999px;padding:13px 26px;font:600 15px Nunito,sans-serif;cursor:pointer;text-decoration:none}
+.btn.alt{background:transparent;color:var(--fg);border:1px solid var(--line)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.chip{border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:999px;padding:8px 16px;font:600 14px Nunito,sans-serif;cursor:pointer}
+.chip[aria-pressed=true]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.grid{columns:2;column-gap:12px}
+@media(min-width:760px){.grid{columns:3}}
+.ph{display:block;width:100%;border:0;padding:0;margin:0 0 12px;border-radius:10px;cursor:pointer;position:relative;overflow:hidden;break-inside:avoid}
+.ph img{width:100%;display:block}
+.ph span{position:absolute;left:10px;bottom:10px;background:rgba(0,0,0,.55);color:#fff;font:600 12px Nunito,sans-serif;padding:4px 10px;border-radius:999px}
+.team{display:grid;gap:14px}
+@media(min-width:760px){.team{grid-template-columns:repeat(2,1fr)}}
+.person{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:left;color:var(--fg);font:inherit;cursor:pointer}
+.person[disabled]{opacity:.6;cursor:default}
+.person h3{font-size:30px}
+.person p{margin:6px 0 0;color:var(--mut);font-size:14px}
+form{display:grid;gap:16px;max-width:520px}
+label{display:grid;gap:6px;font-weight:600;font-size:14px}
+input,select{font:inherit;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);width:100%}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.step{display:flex;align-items:center;gap:14px}
+.step button{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--fg);font-size:22px;cursor:pointer}
+.step output{min-width:2ch;text-align:center;font:600 22px Nunito}
+#ok{display:none;background:var(--card);border:1px solid var(--gold);border-radius:14px;padding:18px;max-width:520px;margin-top:18px;white-space:pre-line}
+dialog{border:0;border-radius:18px;padding:0;max-width:640px;width:calc(100% - 24px);background:var(--bg);color:var(--fg)}
+dialog::backdrop{background:rgba(5,20,20,.7)}
+.pf{padding:24px}
+.pf .mini{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}
+.pf .mini div{aspect-ratio:3/4;border-radius:8px}
+footer{padding:36px 0;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.person:hover{border-color:var(--pea)}.person:active{transform:scale(.98)}.ver{display:inline-block;margin-top:12px;padding:7px 16px;border-radius:999px;background:var(--pea);color:var(--inv);font:600 13px Nunito,sans-serif}.ver::after{content:" \203A"}.price{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:var(--card);border:1px solid var(--gold);border-radius:14px;padding:20px;margin-top:28px}.price h3{font-size:28px}.price p{margin:0;color:var(--mut);font-size:14px}.price .amt{font:400 32px "Alfa Slab One",Georgia,serif;color:var(--fg);margin:2px 0}.av{width:76px;height:76px;border-radius:50%;object-fit:cover;display:block;margin-bottom:10px}.person[disabled]{opacity:.92}.wa{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+h1{text-transform:uppercase}
+.btn{border:3px solid var(--fg);box-shadow:4px 4px 0 var(--fg);transition:transform .1s,box-shadow .1s}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--fg)}
+.btn.alt{background:var(--card);color:var(--fg)}
+.chip{border:2px solid var(--fg);font-weight:800}.chip[aria-pressed=true]{background:var(--pea);color:var(--inv)}
+.person,.price,#ok,dialog{border:3px solid var(--fg);box-shadow:5px 5px 0 var(--fg)}
+.ph{border:3px solid var(--fg);border-radius:6px;box-shadow:4px 4px 0 var(--fg)}
+input,select{border:2px solid var(--fg)}
+.ver{border:2px solid var(--fg)}
+footer{border-top:3px solid var(--fg);color:var(--fg);font-weight:600}
+body{position:relative;overflow-x:clip;background-image:radial-gradient(rgba(86,12,18,.09) 1.3px,transparent 1.7px);background-size:12px 12px}
+.deco{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.deco svg{position:absolute;width:380px;color:#560C12;opacity:.09;filter:drop-shadow(12px 16px 5px rgba(0,0,0,.3))}
+.p1{top:-40px;right:-120px;transform:rotate(-12deg)}.p2{top:30%;left:-170px;transform:scaleX(-1) rotate(-8deg)}.p3{top:62%;right:-160px;transform:rotate(18deg)}.p4{bottom:40px;left:-150px;transform:scaleX(-1) rotate(10deg)}
+.wrap,footer{position:relative;z-index:1}
+.selo{display:inline-block;background:var(--pea);color:var(--inv);font:400 14px/1.15 "Alfa Slab One",Georgia,serif;text-transform:uppercase;letter-spacing:.04em;padding:8px 14px;border:3px solid var(--fg);box-shadow:4px 4px 0 var(--fg);transform:rotate(-3deg);margin-bottom:16px}
+.art{position:relative;width:100%;max-width:340px;justify-self:center}
+.mascote{position:absolute;right:-12px;top:-86px;width:54%;z-index:2;transform:rotate(-3deg);filter:drop-shadow(4px 5px 0 rgba(16,32,15,.35))}
+.poema{max-width:560px;border-left:6px solid var(--pea);padding-left:18px;font-size:18px;line-height:1.7}
+.poema p{margin:0 0 14px}.poema p:first-child{font:400 26px/1.25 "Alfa Slab One",Georgia,serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) body{background-image:radial-gradient(rgba(229,138,146,.09) 1.3px,transparent 1.7px)}.deco svg{color:#E58A92;opacity:.08}}
+.voltar{display:inline-block;margin:22px 0 8px;font-weight:800;color:var(--fg)}
+.pgh{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:8px 0 22px}
+.pgh .av{width:112px;height:112px;margin:0;border:3px solid var(--fg);box-shadow:4px 4px 0 var(--fg)}
+.pgh h1{font-size:clamp(40px,11vw,72px)}.pgh p{margin:4px 0 12px;color:var(--mut);font-weight:600}
+.pgh .btn{margin:0 8px 8px 0}.bio{max-width:52ch;font-size:18px;margin:0 0 12px}
+#pg h2{margin:34px 0 14px}#pg .ph{cursor:zoom-in}
+.ig{font-weight:800;color:var(--pea)}
+#lb{max-width:none;max-height:none;width:100%;height:100%;border:0;box-shadow:none;padding:0;background:rgba(20,4,6,.95)}
+#lb[open]{display:flex;align-items:center;justify-content:center}
+#lbi{max-width:100%;max-height:100%;object-fit:contain}
+#lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:3px solid #fff;background:rgba(0,0,0,.6);color:#fff;font-size:24px;cursor:pointer}
+#lbp{left:8px;top:50%}#lbn{right:8px;top:50%}#lbx{right:10px;top:calc(10px + env(safe-area-inset-top,0px))}
+.dica{background:var(--card);border:3px solid var(--fg);box-shadow:5px 5px 0 var(--fg);padding:18px;max-width:520px;margin:0 0 22px}
+.dica h3{font-size:26px;margin-bottom:8px}.dica p{margin:0}
+fieldset.quem{border:0;padding:0;margin:0}.quem legend{font-weight:800;font-size:14px;margin-bottom:10px;padding:0}.quem .chips{margin-bottom:10px}
+#marcar{padding-top:8px}
+:root{--lg:url("a/01.png");--sm:url("a/02.png")}
+.logo{display:block;width:min(100%,400px);aspect-ratio:620/430;margin:0 0 14px;font-size:0;background:var(--pea);-webkit-mask:var(--lg) center/contain no-repeat;mask:var(--lg) center/contain no-repeat}
+.marca{margin-right:auto;width:46px;height:32px;background:var(--pea);-webkit-mask:var(--sm) center/contain no-repeat;mask:var(--sm) center/contain no-repeat}
+.petalas{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.pet{position:absolute;width:var(--s,46px);height:var(--s,46px);opacity:.6;transform:rotate(var(--r,0deg));filter:drop-shadow(3px 5px 4px rgba(60,5,10,.3));animation:cair var(--d,9s) ease-in-out infinite alternate}
+.art .pet{z-index:2;opacity:.95}
+@keyframes cair{from{transform:translate(0,0) rotate(var(--r,0deg))}to{transform:translate(12px,24px) rotate(calc(var(--r,0deg) + 26deg))}}
+@media (prefers-reduced-motion:reduce){.pet{animation:none}}
+.pols{position:relative;aspect-ratio:1;max-width:340px;width:100%;margin:0 auto}
+.pol{position:absolute;margin:0;width:56%;background:var(--card);padding:8px 8px 26px;border:3px solid var(--fg);box-shadow:5px 5px 0 var(--fg)}
+.pol img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.pol.a{left:0;top:6%;transform:rotate(-7deg)}
+.pol.b{right:0;top:0;transform:rotate(6deg)}
+.pol.c{left:22%;bottom:0;transform:rotate(-2deg);z-index:1}
+body.tx::before{content:"";position:fixed;left:0;top:0;width:100%;height:100vh;height:100lvh;z-index:-1;pointer-events:none;background:linear-gradient(rgba(12,4,16,.25),rgba(12,4,16,.25)),url("a/03.jpg") center/cover no-repeat #3b1d5a}
+body.tx .deco,body.tx .petalas{display:none}
+body.tx #pg{--ink:#10080f}
+body.tx #pg .voltar{display:inline-block;margin:22px 0 10px;padding:7px 16px;background:#FFD23F;color:var(--ink);border:3px solid var(--ink);border-radius:999px;box-shadow:3px 3px 0 var(--ink);transform:rotate(-3deg);font-weight:800}
+body.tx #pg .pgh{background:none;border:0;box-shadow:none;padding:0;margin:6px 0 14px}
+body.tx #pg .pgh .av{width:118px;height:118px;border:5px solid #fff;box-shadow:6px 6px 0 #FF2E93;transform:rotate(-4deg)}
+body.tx #pg .pgh h1{display:inline-block;font-family:"Permanent Marker","Alfa Slab One",Impact,"Arial Black",sans-serif;font-weight:400;color:#fff;transform:rotate(-3deg);text-shadow:3px 3px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000,0 0 22px rgba(255,46,147,.75);letter-spacing:.02em}
+body.tx #pg .pgh p{display:inline-block;margin:6px 0 14px;padding:4px 12px;background:#19D3E0;color:var(--ink);font-weight:800;transform:rotate(1.5deg);box-shadow:3px 3px 0 var(--ink)}
+body.tx #pg .btn{background:#FFD23F;color:var(--ink);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+body.tx #pg .btn.alt{background:#19D3E0}
+body.tx #pg .pgh .btn:nth-of-type(odd){transform:rotate(-1.5deg)}
+body.tx #pg .bio{background:none;border:0;box-shadow:none;padding:0;margin:4px 0 8px;max-width:30ch;color:#fff;font-weight:800;font-size:20px;line-height:1.35;transform:rotate(-1deg);text-shadow:2px 2px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,0 0 14px rgba(0,0,0,.9)}
+body.tx #pg h2{display:inline-block;background:linear-gradient(transparent 52%,#FF2E93 52%);border:0;box-shadow:none;padding:0 10px;margin:34px 0 16px;font-family:"Permanent Marker","Alfa Slab One",Impact,"Arial Black",sans-serif;font-weight:400;font-size:clamp(34px,9vw,50px);color:#fff;transform:rotate(-2deg);text-shadow:3px 3px 0 #000,-2px -2px 0 #000,2px -2px 0 #000,-2px 2px 0 #000}
+body.tx #pg .ph{border:6px solid #fff;border-radius:3px;box-shadow:6px 8px 0 rgba(0,0,0,.55);background-clip:padding-box}
+body.tx #pg .grid .ph:nth-child(odd){transform:rotate(-1.6deg)}
+body.tx #pg .grid .ph:nth-child(even){transform:rotate(1.4deg)}
+body.tx #pg .ph span{background:#FFD23F;color:var(--ink);font-weight:800;border-radius:3px;transform:rotate(-4deg);left:6px;bottom:8px}
+body.tx .wa{background:#FFD23F;color:#10080f;border-color:#10080f;box-shadow:4px 4px 0 #10080f;transform:rotate(-2deg)}
+body.pv::before{content:"";position:fixed;left:0;top:0;width:100%;height:100vh;height:100lvh;z-index:-1;pointer-events:none;background:linear-gradient(rgba(4,12,48,.22),rgba(4,12,48,.22)),url("a/04.jpg") center/cover no-repeat #0b1e55}
+body.pv .deco,body.pv .petalas{display:none}
+body.pv #pg{--ink:#0b1e55}
+body.pv #pg .voltar{display:inline-block;margin:22px 0 12px;padding:7px 16px;background:rgba(8,24,72,.66);color:#FFF3C4;border:2px solid #E8B84A;border-radius:999px;box-shadow:none;font-weight:800;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+body.pv #pg .pgh{background:none;border:0;box-shadow:none;padding:0;margin:6px 0 14px}
+body.pv #pg .pgh .av{width:118px;height:118px;border:4px solid #E8B84A;box-shadow:0 0 0 7px rgba(232,184,74,.22),0 0 34px rgba(255,214,102,.55)}
+body.pv #pg .pgh h1{font-family:"Cormorant Garamond","Playfair Display",Georgia,serif;font-style:italic;font-weight:600;text-transform:none;font-size:clamp(54px,16vw,92px);line-height:.95;color:#FFF3C4;text-shadow:0 2px 14px #061238,0 0 30px rgba(255,214,102,.55)}
+body.pv #pg .pgh p{color:#D6E6FF;font-weight:800;text-shadow:0 1px 8px #061238,0 0 3px #061238}
+body.pv #pg .btn{background:#E8B84A;color:#0b1e55;border:2px solid #FFF3C4;box-shadow:0 4px 18px rgba(0,0,0,.4)}
+body.pv #pg .btn.alt{background:rgba(8,24,72,.66);color:#FFF3C4;border-color:#E8B84A}
+body.pv #pg .bio{background:none;border:0;box-shadow:none;padding:0;margin:4px 0 14px;max-width:30ch;color:#fff;font-family:"Cormorant Garamond","Playfair Display",Georgia,serif;font-style:italic;font-weight:600;font-size:24px;line-height:1.35;text-shadow:0 1px 10px #061238,0 0 4px #061238}
+body.pv #pg .chip{background:rgba(8,24,72,.66);color:#FFF3C4;border:2px solid #E8B84A}
+body.pv #pg .chip[aria-pressed=true]{background:#E8B84A;color:#0b1e55}
+body.pv #pg h2{display:inline-block;background:none;border:0;border-bottom:2px solid #E8B84A;box-shadow:none;padding:0 2px 2px;margin:34px 0 16px;font-family:"Cormorant Garamond","Playfair Display",Georgia,serif;font-style:italic;font-weight:600;font-size:clamp(34px,9vw,48px);color:#FFF3C4;text-shadow:0 2px 12px #061238}
+body.pv #pg .ph{border:3px solid #E8B84A;border-radius:6px;box-shadow:0 10px 28px rgba(3,10,40,.6),0 0 0 1px rgba(255,243,196,.4)}
+body.pv #pg .ph span{background:rgba(8,24,72,.78);color:#FFF3C4}
+body.pv #pg .price{background:rgba(8,24,72,.66);border:2px solid #E8B84A;border-radius:14px;box-shadow:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+body.pv #pg .price h3,body.pv #pg .price .amt{color:#FFF3C4}
+body.pv #pg .price p{color:#D6E6FF}
+body.pv .wa{background:#E8B84A;color:#0b1e55;border-color:#FFF3C4;box-shadow:0 4px 18px rgba(0,0,0,.45)}
+body.pv #pg .sub{color:#E8F0FF;font-weight:700;text-shadow:0 1px 8px #061238,0 0 3px #061238}
+body.pv #pg .sub b{color:#FFF3C4}
+body.tx #pg .sub{color:#fff;font-weight:800;text-shadow:2px 2px 0 #000}
+body:not(.tx):not(.pv)::before{content:"";position:fixed;left:0;top:0;width:100%;height:100vh;height:100lvh;z-index:-1;pointer-events:none;background:linear-gradient(rgba(247,237,233,.5),rgba(247,237,233,.38)),url("a/05.jpg") center/cover no-repeat #E7A0AE}
+body:not(.tx):not(.pv) .deco svg{opacity:.16;mix-blend-mode:multiply}
+body:not(.tx):not(.pv) .pet{opacity:.85}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) body:not(.tx):not(.pv)::before{background:linear-gradient(rgba(42,10,14,.6),rgba(42,10,14,.5)),url("a/05.jpg") center/cover no-repeat #2a0a0e}}
+body:not(.tx):not(.pv) .sub,body:not(.tx):not(.pv) .poema{color:#3a0a0f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) body:not(.tx):not(.pv) .sub,:root:not([data-theme="light"]) body:not(.tx):not(.pv) .poema{color:#F7EDE9}}
+.igl{margin:14px 0 0;font-weight:800}.igl a,.igf{color:var(--fg);text-decoration:underline;text-underline-offset:3px}
+.hero .igl{font-size:15px;margin:14px 0 0;max-width:none}
+.wa-ico{width:60px;height:60px;padding:0;border-radius:50%!important;display:flex!important;align-items:center;justify-content:center;background:#D94F78!important;border:3px solid #fff!important;box-shadow:0 6px 18px rgba(86,12,18,.45)!important;transform:none!important;transition:transform .15s}
+.wa-ico:active{transform:scale(.93)!important}
+.txsticker{display:block;width:min(82%,360px);height:auto;margin:18px auto 8px;transform:rotate(-5deg);filter:drop-shadow(0 8px 14px rgba(0,0,0,.55));animation:txf 4s ease-in-out infinite}
+@keyframes txf{0%,100%{transform:rotate(-5deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-6px)}}
+@media(prefers-reduced-motion:reduce){.txsticker{animation:none}}
+
+.passos{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.passos li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px}
+.passos b{flex:none;width:40px;height:40px;border-radius:50%;background:var(--pea);color:var(--inv);display:flex;align-items:center;justify-content:center;font-size:20px}
+.passos h3{margin:0 0 4px}.passos p{margin:0;color:var(--mut)}
+.bas{display:grid;gap:22px;max-width:420px}
+.ba{position:relative;overflow:hidden;border-radius:18px;border:2px solid var(--line);user-select:none;touch-action:pan-y;background:#000}
+.ba img{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.ba .antes{filter:saturate(.4) contrast(.62) brightness(1.08) sepia(.12);clip-path:inset(0 calc(100% - var(--p,50%)) 0 0)}
+.ba .barra{position:absolute;top:0;bottom:0;left:var(--p,50%);width:4px;margin-left:-2px;background:#fff;box-shadow:0 0 8px rgba(0,0,0,.5);pointer-events:none}
+.ba .barra::after{content:"\2194";position:absolute;top:50%;left:50%;width:40px;height:40px;margin:-20px 0 0 -20px;border-radius:50%;background:#fff;color:#560C12;display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 2px 10px rgba(0,0,0,.5)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.ba .tag{position:absolute;top:10px;padding:3px 10px;border-radius:99px;background:rgba(0,0,0,.6);color:#fff;font-size:13px;pointer-events:none}
+.ba .t1{left:10px}.ba .t2{right:10px}
+.depl{display:grid;gap:14px}.depl blockquote{margin:0;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px}
+.depl cite{display:block;margin-top:8px;font-style:normal;color:var(--mut);font-size:14px}
+#faq details{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px 16px;margin-bottom:10px}
+#faq summary{cursor:pointer;font-weight:700}#faq details p{margin:10px 0 0;color:var(--mut)}
+.vid{max-width:640px;border-radius:20px;overflow:hidden;border:2px solid var(--line);box-shadow:0 10px 28px rgba(86,12,18,.3);background:#000}.vid video{display:block;width:100%;height:auto}
+
+nav{overflow-x:auto;white-space:nowrap;scrollbar-width:none;justify-content:flex-start!important}nav::-webkit-scrollbar{display:none}nav a{flex:none}nav .marca{margin-right:auto}
+.skip{position:absolute;left:-999px;top:8px;background:var(--pea);color:var(--inv);padding:8px 14px;border-radius:10px;z-index:20}.skip:focus{left:8px}
+a:focus-visible,button:focus-visible,summary:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #D94F78;outline-offset:3px}
+.cidade{margin:18px 0 0;color:var(--mut);font-weight:600}
+.duo{display:flex;gap:16px;margin-bottom:16px}.duo .av{width:96px;height:96px;margin:0}
+.simbox{max-width:460px;background:var(--card);border:2px solid var(--line);border-radius:20px;padding:18px;display:grid;gap:14px}
+.simbox label{display:grid;gap:6px;font-weight:600;font-size:14px}.simbox select{font:inherit;padding:12px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--fg)}
+.simbox .amt{margin:0;font-size:30px}
+#topo{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:5;width:46px;height:46px;border-radius:50%;border:2px solid var(--line);background:var(--card);color:var(--pea);font-size:22px;cursor:pointer;display:none;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+#topo.on{display:block}
+.rv{opacity:0;transform:translateY(26px)}
+.rv.in{animation:rvin .8s steps(7,end) forwards}
+@keyframes rvin{from{opacity:0;transform:translateY(26px) rotate(-.6deg)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.rv.in{animation:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EE8E96"/><stop offset=".55" stop-color="#A52B3A"/><stop offset="1" stop-color="#560C12"/></linearGradient></defs><symbol id="pet" viewBox="0 0 100 100"><path d="M50 4C84 12 102 46 84 78C72 98 54 100 50 100C46 100 28 98 16 78C-2 46 16 12 50 4Z" fill="url(#pg1)"/><path d="M50 16C53 42 50 70 50 92" stroke="#fff" stroke-opacity=".25" stroke-width="2" fill="none"/><path d="M33 25C44 18 59 18 68 27" stroke="#fff" stroke-opacity=".38" stroke-width="5" stroke-linecap="round" fill="none"/></symbol><symbol id="fr" viewBox="0 0 480 420"><path d="M30 400 L37 376 L44 353 L53 331 L62 309 L72 289 L83 269 L94 250 L106 232 L119 214 L133 198 L147 182 L162 167 L178 153 L194 139 L212 127 L230 115 L248 104 L268 94 L288 84 L309 76 L330 68 L353 61 L376 55 L400 50" fill="none" stroke="currentColor" stroke-width="5"/><path d="M55 326Q48 285 18 256Q25 297 55 326ZM55 326Q96 326 130 302Q89 302 55 326ZM62 309Q56 265 26 232Q32 276 62 309ZM62 309Q107 311 144 286Q99 284 62 309ZM70 292Q66 245 35 210Q39 256 70 292ZM70 292Q117 296 158 271Q111 268 70 292ZM79 276Q76 226 45 188Q48 237 79 276ZM79 276Q128 281 171 257Q122 252 79 276ZM88 260Q87 208 56 167Q57 219 88 260ZM88 260Q139 268 185 244Q134 237 88 260ZM97 245Q98 191 68 147Q67 201 97 245ZM97 245Q150 255 199 233Q146 222 97 245ZM107 230Q110 175 81 128Q78 183 107 230ZM107 230Q161 243 212 222Q158 209 107 230ZM118 216Q123 160 95 110Q89 167 118 216ZM118 216Q172 231 226 212Q171 197 118 216ZM129 202Q136 145 109 94Q102 151 129 202ZM129 202Q184 220 239 202Q184 185 129 202ZM140 189Q150 132 125 79Q115 137 140 189ZM140 189Q195 209 251 194Q196 174 140 189ZM152 177Q165 119 141 65Q129 123 152 177ZM152 177Q206 199 263 186Q209 164 152 177ZM164 165Q179 108 158 53Q143 110 164 165ZM164 165Q218 189 275 179Q222 154 164 165ZM177 153Q194 98 176 42Q159 98 177 153ZM177 153Q229 180 287 172Q235 145 177 153ZM190 142Q210 88 194 33Q175 87 190 142ZM190 142Q241 171 298 165Q248 136 190 142ZM204 132Q225 79 212 24Q191 77 204 132ZM204 132Q252 162 309 158Q261 128 204 132ZM219 122Q241 72 230 17Q208 68 219 122ZM219 122Q264 153 320 152Q274 121 219 122ZM233 113Q257 65 249 12Q225 60 233 113ZM233 113Q277 145 330 146Q287 114 233 113ZM249 104Q273 58 267 7Q243 52 249 104ZM249 104Q289 136 341 139Q300 107 249 104ZM264 96Q290 53 286 4Q260 46 264 96ZM264 96Q302 128 351 133Q314 100 264 96ZM281 88Q306 48 304 1Q279 41 281 88ZM281 88Q315 120 361 126Q327 94 281 88ZM297 80Q323 44 323 0Q297 36 297 80ZM297 80Q328 112 372 119Q341 88 297 80ZM314 74Q339 41 341 0Q316 32 314 74ZM314 74Q342 104 383 113Q355 82 314 74ZM332 67Q356 38 359 0Q335 29 332 67ZM332 67Q357 96 394 105Q369 77 332 67ZM350 62Q373 36 377 1Q354 27 350 62ZM350 62Q372 89 405 98Q384 71 350 62ZM369 57Q390 34 394 3Q373 26 369 57ZM369 57Q388 82 417 91Q399 66 369 57ZM388 52Q408 32 412 5Q393 25 388 52ZM388 52Q404 75 430 84Q414 61 388 52ZM400 50Q420 36 458 37Q410 64 400 50Z"/></symbol></svg>
+<div class="deco" aria-hidden="true"><svg class="p1" viewBox="0 0 480 420"><use href="#fr"/></svg><svg class="p2" viewBox="0 0 480 420"><use href="#fr"/></svg><svg class="p3" viewBox="0 0 480 420"><use href="#fr"/></svg><svg class="p4" viewBox="0 0 480 420"><use href="#fr"/></svg></div>
+<div class="petalas" aria-hidden="true"><svg class="pet" viewBox="0 0 100 100" style="left:6%;top:4%;--s:40px;--r:-30deg;--d:8s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:88%;top:9%;--s:56px;--r:40deg;--d:11s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:72%;top:20%;--s:34px;--r:110deg;--d:9s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:10%;top:27%;--s:52px;--r:70deg;--d:12s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:92%;top:37%;--s:38px;--r:-60deg;--d:10s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:4%;top:49%;--s:44px;--r:150deg;--d:9s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:82%;top:58%;--s:50px;--r:20deg;--d:13s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:18%;top:67%;--s:36px;--r:-100deg;--d:8s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:90%;top:77%;--s:42px;--r:90deg;--d:11s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:8%;top:87%;--s:54px;--r:30deg;--d:12s"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="left:62%;top:93%;--s:36px;--r:-20deg;--d:9s"><use href="#pet"/></svg></div>
+<div class="wrap">
+<a class="skip" href="#sobre">Pular para o conteúdo</a>
+<nav aria-label="Principal"><a class="marca" href="#" aria-label="Início"></a><a href="#sobre">Sobre</a><a href="#filme">Filme</a><a href="#fotos">Fotos</a><a href="#valores">Valores</a><a href="#equipe">Equipe</a><a href="#faq">Dúvidas</a><a href="#agendar">Agendar</a></nav>
+<header class="hero">
+  <div>
+    <h1 class="logo" role="img" aria-label="Pavtex Fotografia e Filme"></h1>
+    <span class="selo">Hoje a protagonista é você</span>
+    <p>Fotografia além do comum, do jeitinho brasileiro. Foto e vídeo de XV, retrato, eventos e casamento.</p>
+    <a class="btn" href="#agendar">Quero marcar</a>
+    <a class="btn alt" style="margin-top:8px" href="https://wa.me/5547989190499?text=Oi!%20Vi%20o%20site%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Chama no Zap</a>
+    <p class="igl"><a href="https://instagram.com/pavtex.estudio" target="_blank" rel="noopener">Siga a gente no Instagram: @pavtex.estudio</a></p>
+  </div>
+  <div class="art"><div class="pols"><figure class="pol a"><img alt=""></figure><figure class="pol b"><img alt=""></figure><figure class="pol c"><img alt=""></figure></div><svg class="pet" viewBox="0 0 100 100" style="left:-9%;top:-7%;--s:56px;--r:-28deg"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="right:-7%;top:-9%;--s:48px;--r:38deg"><use href="#pet"/></svg><svg class="pet" viewBox="0 0 100 100" style="right:6%;bottom:-8%;--s:40px;--r:112deg"><use href="#pet"/></svg></div>
+</header>
+
+<section id="sobre">
+  <h2>O que a gente faz</h2>
+  <div class="poema">
+    <p>A gente fotografa o que o tempo leva embora.</p>
+    <p>O riso que escapa no meio da cerimônia. A mão que procura a outra mão. O olhar de quem fez quinze anos e sente o mundo inteiro caber no vestido.</p>
+    <p>Tem foto, tem vídeo, e tem o jeitinho de quem nasceu aqui e sabe que festa boa é aquela em que ninguém precisa fingir.</p>
+    <p>Casamento, XV, retrato, evento. Pra cada história, um olhar atento e um coração do tamanho do Brasil. Sem frescura, sem pose forçada: só gente de verdade, guardada pra sempre.</p>
+  </div>
+  <p class="cidade">Atendemos Joinville e região. Em outra cidade? Chama a gente, que o transporte entra à parte.</p>
+</section>
+
+<section id="filme"><h2>O nosso filme</h2><p class="sub">Um pedacinho de um casamento que a gente filmou.</p><div class="vid"><video muted loop playsinline autoplay preload="metadata" poster="a/06.jpg" aria-label="Trecho de um casamento filmado pela Pavtex"><source src="a/07.mp4" type="video/mp4"></video></div></section>
+
+<section id="fotos">
+  <h2>Nosso trabalho</h2>
+  <p class="sub">Um pouco do que a gente faz. Toque numa foto pra ver quem tirou, ou escolha um fotógrafo pra ver todas as fotos dele.</p>
+  <div class="chips" id="chips">
+    <button class="chip" aria-pressed="true" data-f="todas">Todas</button>
+    <button class="chip" aria-pressed="false" data-f="Casamento">Casamento</button>
+    <button class="chip" aria-pressed="false" data-f="XV">XV</button>
+    <button class="chip" aria-pressed="false" data-f="Retrato">Retrato</button>
+    <button class="chip" aria-pressed="false" data-f="Eventos">Eventos</button>
+    <button class="chip" aria-pressed="false" data-f="Esportivo">Esportivo</button>
+    <button class="chip" aria-pressed="false" data-f="Comercial">Comercial</button>
+  </div>
+  <div class="chips" id="pchips" aria-label="Fotógrafo">
+    <button class="chip" aria-pressed="true" data-p="todos">Toda a equipe</button>
+    <button class="chip" aria-pressed="false" data-p="Pavão">Pavão</button>
+    <button class="chip" aria-pressed="false" data-p="Texugo">Texugo</button>
+  </div>
+  <p class="sub" id="vazio" style="display:none"></p>
+  <div class="grid" id="grid"></div>
+  <span id="valores"></span><div class="price"><div><h3>Ensaio</h3><p class="amt">a partir de R$ 350</p><p>Com um fotógrafo. Transporte à parte, dependendo do lugar.</p></div><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20ensaio." target="_blank" rel="noopener">Pedir orçamento</a></div><div class="price"><div><h3>Casamento</h3><p class="amt">a partir de R$ 400</p><p>Cobertura do seu grande dia. Transporte à parte, dependendo do lugar.</p></div><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20casamento." target="_blank" rel="noopener">Pedir orçamento</a></div><div class="price"><div><h3>Eventos</h3><p class="amt">a partir de R$ 300</p><p>Aniversários, formaturas, shows e festas. Transporte à parte, dependendo do lugar.</p></div><a class="btn" href="https://wa.me/5547989190499?text=Oi!%20Quero%20um%20or%C3%A7amento%20de%20evento." target="_blank" rel="noopener">Pedir orçamento</a></div>
+  <p class="sub" style="margin-top:14px">XV e pacote com os dois fotógrafos: valores pelo WhatsApp. <a href="https://wa.me/5547989190499?text=Oi!%20Quero%20saber%20os%20valores%20e%20pacotes." target="_blank" rel="noopener" style="color:var(--pea);font-weight:600">Pedir valores</a></p>
+</section>
+
+<section id="historia"><h2>Nossa história</h2>
+<div class="duo"><img class="av" id="hv1" alt="Pavão" src=""><img class="av" id="hv2" alt="Texugo" src=""></div>
+<p class="sub">A Pavtex é feita por dois manos, Pavão e Texugo, que levam a câmera pra onde a vida acontece. O Pavão cuida do casamento, do XV e do retrato. O Texugo, do esporte, do comercial e do retrato.</p>
+<p class="sub">Juntos, a gente cobre o seu dia por inteiro, com respeito e com fé em cada história que passa pela nossa lente.</p></section>
+
+<section id="equipe">
+  <h2>Quem tira as fotos</h2>
+  <p class="sub">Toque num fotógrafo pra ver só as fotos dele.</p>
+  <div class="team">
+    <button class="person" data-who="Pavão"><img class="av" alt="Pavão" src="a/08.jpg"><h3>Pavão</h3><p>Casamento, XV, retrato e design gráfico</p><span class="ver">Ver fotos</span></button>
+    <button class="person" data-who="Texugo"><img class="av" alt="Texugo" src="data:image/jpeg;base64,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"><h3>Texugo</h3><p>Retrato, esportivo e comercial</p><span class="ver">Ver fotos</span></button>
+  </div>
+</section>
+
+<section id="como"><h2>Como funciona</h2>
+<ol class="passos"><li><b>1</b><div><h3>Você chama</h3><p>Escolha o fotógrafo, ou os dois, e mande a data e o tipo de evento pelo WhatsApp.</p></div></li><li><b>2</b><div><h3>A gente combina</h3><p>Conversamos sobre local, horário, estilo e valor. Sem enrolação e sem letra miúda.</p></div></li><li><b>3</b><div><h3>Você recebe as fotos</h3><p>Fotografamos, editamos com carinho e entregamos tudo tratado, pronto para postar e imprimir.</p></div></li></ol></section>
+
+<section id="edicao"><h2>Antes e depois</h2><p class="sub">Arraste a barra e veja o que a edição faz com a foto que sai da câmera.</p><div id="bas" class="bas"></div></section>
+
+<section id="depo" style="display:none"><h2>Quem já fez com a gente</h2><div id="depl" class="depl"></div></section>
+
+<section id="simular"><h2>Simule seu orçamento</h2><p class="sub">Escolha o tipo de evento e quantos fotógrafos. Você vê o valor inicial e manda o resumo pelo WhatsApp.</p>
+<div class="simbox"><label>Tipo de evento<select id="stipo"><option>Ensaio</option><option>Casamento</option><option>Evento</option><option>XV</option></select></label>
+<div class="chips" id="sqtd" role="group" aria-label="Quantos fotógrafos"><button type="button" class="chip" aria-pressed="true" data-q="1">1 fotógrafo</button><button type="button" class="chip" aria-pressed="false" data-q="2">Os 2 fotógrafos</button></div>
+<p class="amt" id="sval"></p><p class="sub" id="snota" style="margin:0 0 14px"></p><a class="btn" id="szap" href="#" target="_blank" rel="noopener">Mandar pelo WhatsApp</a></div></section>
+
+<section id="faq"><h2>Perguntas frequentes</h2>
+<details><summary>Em quanto tempo recebo as fotos?</summary><p>O prazo depende do tipo de evento e da quantidade de fotos. Combinamos a data de entrega com você antes de fechar.</p></details>
+<details><summary>O transporte é cobrado?</summary><p>Ensaio a partir de R$ 350, casamento a partir de R$ 400 e eventos a partir de R$ 300. O transporte entra à parte, de acordo com o local. Passamos o valor certinho pelo WhatsApp.</p></details>
+<details><summary>Como funciona o pagamento?</summary><p>Combinamos tudo pelo WhatsApp, junto com a data e o pacote. Nada de surpresa no final.</p></details>
+<details><summary>Vale a pena chamar os dois fotógrafos?</summary><p>Vale, principalmente em casamento e XV. Com dois fotógrafos, mais momentos são captados ao mesmo tempo e você recebe mais fotos, melhor distribuídas.</p></details>
+<details><summary>E se eu precisar remarcar?</summary><p>É só avisar com antecedência pelo WhatsApp que a gente encontra outra data junto com você.</p></details>
+<details><summary>Vocês também fazem vídeo?</summary><p>Sim, somos Fotografia &amp; Filme. Fale com a gente no WhatsApp para combinar foto, vídeo ou os dois.</p></details>
+</section>
+
+<section id="marcar"><h2>Bora marcar?</h2><p class="sub">Escolha um ou os dois fotógrafos. Com os dois, mais momentos são captados.</p><a class="btn" href="#agendar">Marcar meu evento</a></section>
+
+<section id="agendar">
+  <a class="voltar" href="#">← Voltar</a>
+  <h2>Marque seu evento</h2>
+  <div class="dica"><h3>Mais fotógrafos, mais momentos</h3><p>Com os dois fotógrafos no seu evento, a gente capta vários momentos ao mesmo tempo: a noiva se arrumando enquanto o noivo chega, a pista de dança e o abraço da família. No total saem mais fotos, e elas ficam mais bem distribuídas, com todo mundo aparecendo e nenhum momento de fora.</p></div>
+  <p class="sub">Conta o que você quer, quando e quantos convidados. A resposta vem pelo Zap.</p>
+  <form id="f">
+    <label>Seu nome<input name="nome" required autocomplete="name"></label>
+    <label>Tipo de ensaio
+      <select name="tipo"><option>Casamento</option><option>XV</option><option>Retrato</option><option>Evento</option></select></label>
+    <fieldset class="quem"><legend>Quem vai fotografar?</legend>
+      <div class="chips" id="opts"><button type="button" class="chip" aria-pressed="false" data-n="Pavão">Pavão</button><button type="button" class="chip" aria-pressed="false" data-n="Texugo">Texugo</button></div>
+      <button type="button" class="btn alt" id="todos3">Quero os dois</button>
+      <p class="sub" id="resumo" style="margin:10px 0 0"></p></fieldset>
+    <label>Local do evento<input name="local" placeholder="Cidade ou endereço" autocomplete="off"></label>
+    <div class="row">
+      <label>Data<input type="date" name="data" required></label>
+      <label>Hora<input type="time" name="hora" required></label>
+    </div>
+    <div>
+      <div style="font-weight:600;font-size:14px;margin-bottom:6px">Convidados</div>
+      <div class="step"><button type="button" id="m" aria-label="Menos">−</button><output id="n">50</output><button type="button" id="p" aria-label="Mais">+</button></div>
+    </div>
+    <button class="btn" type="submit">Enviar pelo WhatsApp</button>
+  </form>
+  <div id="ok" role="status"></div>
+</section>
+<div id="pg" style="display:none"></div>
+</div>
+
+<footer><div class="wrap">Pavtex Fotografia &amp; Filme · Pavão e Texugo<br>De brasileiros para brasileiros.<br>Joinville e região<br><a class="igf" href="https://instagram.com/pavtex.estudio" target="_blank" rel="noopener">@pavtex.estudio</a></div></footer>
+
+<dialog id="d"><div class="pf">
+  <img class="av" id="dav" style="width:96px;height:96px" alt="" src=""><h2 id="dn">Pavão</h2>
+  <p class="sub" id="db">Fotógrafo da Pavtex. A apresentação dele entra aqui.</p>
+  <div class="mini" id="dm"></div>
+  <p class="sub" style="margin-bottom:18px">Edições: em cada foto, o antes e o depois da edição aparecem aqui.</p>
+  <a class="btn" href="#agendar" id="da">Agendar com o Pavão</a>
+  <button class="btn alt" id="dx" type="button">Fechar</button>
+</div></dialog>
+
+<a class="wa wa-ico" href="https://wa.me/5547989190499?text=Oi!%20Vi%20o%20site%20e%20quero%20saber%20mais." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<button type="button" id="topo" aria-label="Voltar ao topo">↑</button>
+<dialog id="lb" aria-label="Foto ampliada"><button type="button" id="lbp" aria-label="Anterior">‹</button><img id="lbi" alt=""><button type="button" id="lbn" aria-label="Próxima">›</button><button type="button" id="lbx" aria-label="Fechar">✕</button></dialog>
+<script>
+// Fotos de exemplo: troque cada "src" pela foto real do Pavão.
+var cats=["Casamento","15 anos","Retrato"];
+var fotos=[{"c": "Casamento", "r": 0.735, "g": "#10292a", "src": "a/09.jpg"}, {"c": "Esportivo", "r": 0.864, "g": "#10292a", "p": "Texugo", "src": "a/10.jpg"}, {"c": "Retrato", "r": 0.667, "g": "#10292a", "src": "a/11.jpg"}, {"c": "Comercial", "r": 0.775, "g": "#10292a", "p": "Texugo", "src": "a/12.jpg"}, {"c": "Casamento", "r": 0.778, "g": "#10292a", "src": "a/13.jpg"}, {"c": "Retrato", "r": 0.667, "g": "#10292a", "p": "Texugo", "src": "a/14.jpg"}, {"c": "Retrato", "r": 0.667, "g": "#10292a", "src": "a/15.jpg"}, {"c": "Retrato", "r": 0.792, "g": "#10292a", "p": "Texugo", "src": "a/16.jpg"}, {"c": "Casamento", "r": 0.76, "g": "#10292a", "src": "a/17.jpg"}, {"c": "Esportivo", "r": 0.915, "g": "#10292a", "p": "Texugo", "src": "a/18.jpg"}, {"c": "Retrato", "r": 0.667, "g": "#10292a", "src": "a/19.jpg"}, {"c": "Comercial", "r": 0.782, "g": "#10292a", "p": "Texugo", "src": "a/20.jpg"}, {"c": "Casamento", "r": 0.746, "g": "#10292a", "src": "a/21.jpg"}, {"c": "Retrato", "r": 0.667, "g": "#10292a", "p": "Texugo", "src": "a/22.jpg"}, {"c": "Retrato", "r": 0.666, "g": "#10292a", "p": "Texugo", "src": "a/23.jpg"}, {"c": "Esportivo", "r": 0.896, "g": "#10292a", "p": "Texugo", "src": "a/24.jpg"}, {"c": "Comercial", "r": 0.792, "g": "#10292a", "p": "Texugo", "src": "a/25.jpg"}, {"c": "Retrato", "r": 0.666, "g": "#10292a", "p": "Texugo", "src": "a/26.jpg"}, {"c": "Retrato", "r": 0.671, "g": "#10292a", "p": "Texugo", "src": "a/27.jpg"}, {"c": "Eventos", "r": 0.563, "g": "#10292a", "src": "a/28.jpg"}, {"c": "Eventos", "r": 0.562, "g": "#10292a", "src": "a/29.jpg"}, {"c": "Eventos", "r": 0.562, "g": "#10292a", "src": "a/30.jpg"}, {"c": "Esportivo", "r": 0.562, "g": "#10292a", "src": "a/31.jpg"}, {"c": "Esportivo", "r": 0.667, "g": "#10292a", "src": "a/32.jpg"}, {"c": "Retrato", "r": 0.667, "g": "#10292a", "src": "a/33.jpg"}];
+document.querySelectorAll("#chips .chip").forEach(function(c){if(c.dataset.f!=="todas"&&!fotos.some(function(x){return x.c===c.dataset.f}))c.style.display="none"});
+var grid=document.getElementById("grid"),d=document.getElementById("d");
+var fc="todas",fp="todos";
+function draw(){grid.innerHTML="";var n0=0;fotos.forEach(function(x){
+  if(fc!=="todas"&&x.c!==fc)return;if(fp!=="todos"&&(x.p||"Pavão")!==fp)return;if(fp==="todos"&&n0>=5)return;n0++;
+  var b=document.createElement("button");b.className="ph";b.style.aspectRatio=x.r;
+  b.style.background=x.g;b.setAttribute("aria-label","Foto de "+x.c+", abrir perfil do fotógrafo");
+  if(x.src){b.innerHTML='<img alt="Foto de '+x.c+' por '+(x.p||"Pavão")+'" loading="lazy" decoding="async" src="'+x.src+'">'}
+  b.innerHTML+='<span>'+x.c+'</span>';
+  b.onclick=function(){go(x.p||"Pavão")};grid.appendChild(b)});var z=document.getElementById("vazio");z.style.display=n0?"none":"block";z.textContent=fp+" ainda não tem fotos aqui. Em breve."}
+function openP(n){var m=document.getElementById("dm");m.innerHTML="";
+  fotos.forEach(function(x){if((x.p||"Pavão")!==n)return;var e=document.createElement("div");e.style.background="center/cover url("+x.src+")";m.appendChild(e)});
+  document.getElementById("dn").textContent=n;
+  var im=document.querySelector('.person img[alt="'+n+'"]');document.getElementById("dav").src=im?im.src:"";
+  document.getElementById("da").textContent="Agendar com "+n;
+  pick([n]);
+  d.showModal()}
+document.getElementById("chips").onclick=function(e){var c=e.target.closest(".chip");if(!c)return;
+  document.querySelectorAll("#chips .chip").forEach(function(k){k.setAttribute("aria-pressed",k===c)});fc=c.dataset.f;draw()};
+document.getElementById("pchips").onclick=function(e){var c=e.target.closest(".chip");if(!c)return;
+  document.querySelectorAll("#pchips .chip").forEach(function(k){k.setAttribute("aria-pressed",k===c)});fp=c.dataset.p;draw()};
+function sel(n){fp=n;document.querySelectorAll("#pchips .chip").forEach(function(k){k.setAttribute("aria-pressed",k.dataset.p===n)});draw()}
+document.querySelectorAll(".person").forEach(function(c){c.onclick=function(){go(c.dataset.who)}});
+document.getElementById("dx").onclick=function(){d.close()};
+document.getElementById("da").onclick=function(){d.close()};
+d.onclick=function(e){if(e.target===d)d.close()};
+var n=50,out=document.getElementById("n");
+document.getElementById("m").onclick=function(){n=Math.max(0,n-5);out.textContent=n};
+document.getElementById("p").onclick=function(){n=n+5;out.textContent=n};
+document.getElementById("f").onsubmit=function(e){e.preventDefault();
+  var v=new FormData(e.target),dt=v.get("data").split("-").reverse().join("/");
+  var t="Pedido de reserva\n"+v.get("tipo")+" com "+quem()+"\n"+dt+" às "+v.get("hora")+"\n"+n+" convidados\nPacote: "+pacTxt()+"\nLocal: "+(v.get("local")||"a combinar")+"\nNome: "+v.get("nome");
+  var u="https://wa.me/5547989190499?text="+encodeURIComponent(t);
+  var o=document.getElementById("ok");o.style.display="block";o.textContent=t+"\n\nAbrindo o WhatsApp. Se não abrir, toque no botão.";
+  var a=document.createElement("a");a.className="btn";a.href=u;a.target="_blank";a.rel="noopener";a.style.marginTop="12px";a.textContent="Enviar pelo WhatsApp";
+  o.appendChild(document.createElement("br"));o.appendChild(a);
+  try{window.open(u,"_blank","noopener")}catch(x){}};
+var bloqueados=["2027-01-30"]; // dias reservados, formato AAAA-MM-DD
+var dtIn=document.querySelector("[name=data]");dtIn.min=new Date().toISOString().slice(0,10);
+dtIn.onchange=function(){var b=bloqueados.indexOf(dtIn.value)>-1;dtIn.setCustomValidity(b?"Esse dia já está reservado. Escolha outra data.":"");if(b)dtIn.reportValidity()};
+var lb=document.getElementById("lb"),lbi=document.getElementById("lbi"),lbL=[],lbI=0,tx0=0;
+function lbShow(i){lbI=(i+lbL.length)%lbL.length;lbi.src=lbL[lbI].src;lbi.alt=lbL[lbI].c}
+function lbOpen(l,i){lbL=l;lbShow(i);lb.showModal()}
+document.getElementById("lbp").onclick=function(){lbShow(lbI-1)};
+document.getElementById("lbn").onclick=function(){lbShow(lbI+1)};
+document.getElementById("lbx").onclick=function(){lb.close()};
+lb.onclick=function(e){if(e.target===lb)lb.close()};
+document.addEventListener("keydown",function(e){if(!lb.open)return;if(e.key==="ArrowLeft")lbShow(lbI-1);if(e.key==="ArrowRight")lbShow(lbI+1)});
+lb.addEventListener("touchstart",function(e){tx0=e.touches[0].clientX},{passive:true});
+lb.addEventListener("touchend",function(e){var d=e.changedTouches[0].clientX-tx0;if(Math.abs(d)>50)lbShow(lbI+(d<0?1:-1))});
+function indis(){if(!bloqueados.length)return;var r=document.createElement("p");r.className="sub";r.style.margin="0";r.textContent="Dias já reservados: "+bloqueados.map(function(d){return d.split("-").reverse().slice(0,2).join("/")}).join(", ");dtIn.closest(".row").after(r)}
+indis();
+draw("todas");
+// Dados de cada fotógrafo: preencha insta (ex.: "@fulano") e bio (frase curta). Em branco, não aparece.
+var PERFIL={"Pavão":{insta:"@oguricriativo",bio:"Fotografar é rezar com os olhos: enxergar a graça onde ela mora e guardá-la pra sempre. Que cada foto seja um agradecimento.",cor:"#560C12"},"Texugo":{insta:"@texugo254",bio:"Cada rosto é obra de Deus, e eu só chego perto o bastante pra ver. Foto boa nasce de olhar com respeito e com fé.",cor:"#8E2433"}};
+var ARTES=[{"c": "Design gráfico", "r": 0.8, "g": "#10292a", "src": "a/34.jpg"}, {"c": "Design gráfico", "r": 0.794, "g": "#10292a", "src": "a/35.jpg"}, {"c": "Design gráfico", "r": 0.562, "g": "#10292a", "src": "a/36.jpg"}, {"c": "Design gráfico", "r": 0.562, "g": "#10292a", "src": "a/37.jpg"}, {"c": "Design gráfico", "r": 0.778, "g": "#10292a", "src": "a/38.jpg"}];
+var SEL=[];
+function resumo(){[].forEach.call(document.querySelectorAll("#opts .chip"),function(c){c.setAttribute("aria-pressed",SEL.indexOf(c.dataset.n)>-1)});
+  var n=SEL.length,l=quem();document.getElementById("resumo").textContent=n===0?"Sem preferência: a gente escolhe os fotógrafos pra você.":n===1?"Você escolheu: "+l+".":n===2?"Você escolheu "+l+": dois fotógrafos captam momentos diferentes ao mesmo tempo.":"Você escolheu os três: "+l+". Mais fotos, mais ângulos e todo mundo registrado."}
+function quem(){return SEL.length?SEL.join(", ").replace(/, ([^,]*)$/," e $1"):"fotógrafo a definir"}
+function pacTxt(){return["a definir","1 fotógrafo","Os 2 fotógrafos"][SEL.length]}
+function pick(a){SEL=a.slice();resumo()}
+document.getElementById("opts").onclick=function(e){var c=e.target.closest(".chip");if(!c)return;var i=SEL.indexOf(c.dataset.n);if(i<0)SEL.push(c.dataset.n);else SEL.splice(i,1);resumo()};
+document.getElementById("todos3").onclick=function(){pick(["Pavão","Texugo"])};
+resumo();
+var SL={pavao:"Pavão",texugo:"Texugo"};
+var home=[].slice.call(document.querySelectorAll(".wrap>nav,.wrap>header,.wrap>section,body>footer"));
+function go(n){for(var k in SL)if(SL[k]===n)location.hash=k}
+function tile(x,l){var b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Ampliar foto de "+x.c);b.onclick=function(){lbOpen(l,l.indexOf(x))};b.className="ph";b.style.aspectRatio=x.r;b.style.background=x.g;b.innerHTML='<img alt="'+x.c+'" src="'+x.src+'"><span>'+x.c+'</span>';return b}
+var TXS="a/39.png";
+function render(n){var pf=PERFIL[n],pg=document.getElementById("pg"),av=document.querySelector('.person img[alt="'+n+'"]');
+  var mine=fotos.filter(function(x){return(x.p||"Pavão")===n}),cats=[];mine.forEach(function(x){if(cats.indexOf(x.c)<0)cats.push(x.c)});
+  var ig=pf.insta.replace("@","");
+  pg.innerHTML='<a class="voltar" href="#equipe">\u2190 Voltar</a><div class="pgh">'+(av?'<img class="av" alt="'+n+'" src="'+av.src+'">':'')+'<div><h1>'+n+'</h1><p>'+(cats.join(" \u00b7 ")||"Fotos em breve")+'</p>'+(ig?'<a class="btn alt" target="_blank" rel="noopener" href="https://instagram.com/'+ig+'">@'+ig+'</a> ':'')+'<a class="btn" id="pgag" href="#agendar">Agendar com '+n+'</a><button class="btn alt" id="pgsh" type="button">Compartilhar</button></div></div>'+(pf.bio?'<p class="bio">'+pf.bio+'</p>':'')+(n==="Texugo"?'<img class="txsticker" alt="Texugo grafitado" src="'+TXS+'">':'')+'<div id="pgc"></div>';
+  var box=document.getElementById("pgc");
+  if(!mine.length)box.innerHTML='<p class="sub">As fotos do '+n+' chegam em breve.</p>';
+  cats.forEach(function(c){var s=document.createElement("div");s.innerHTML='<h2>'+c+'</h2><div class="grid"></div>';var g=s.querySelector(".grid");mine.forEach(function(x){if(x.c===c)g.appendChild(tile(x,mine))});box.appendChild(s)});
+  if(n==="Pavão"){var tb=document.createElement("div");tb.className="chips";tb.innerHTML='<button class="chip" aria-pressed="true" data-t="f" type="button">Fotos</button><button class="chip" aria-pressed="false" data-t="d" type="button">Design gráfico</button>';
+    box.parentNode.insertBefore(tb,box);
+    var dp=document.createElement("div");dp.style.display="none";dp.innerHTML='<h2>Design gráfico</h2><p class="sub">Artes pra atleta, time, evento e redes sociais. Cada arte sai por <b>R$ 45</b>.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/5547989190499?text=Oi!%20Quero%20uma%20arte%20de%20design%20gr%C3%A1fico.">Pedir minha arte</a><div class="grid" style="margin-top:22px"></div>';
+    box.parentNode.appendChild(dp);ARTES.forEach(function(x){dp.querySelector(".grid").appendChild(tile(x,ARTES))});
+    tb.onclick=function(e){var c=e.target.closest(".chip");if(!c)return;[].forEach.call(tb.children,function(k){k.setAttribute("aria-pressed",k===c)});var d=c.dataset.t==="d";box.style.display=d?"none":"";dp.style.display=d?"":"none"}}
+  document.getElementById("pgag").onclick=function(){pick([n])};
+  document.getElementById("pgsh").onclick=function(){var u=location.href,b=this;if(navigator.share){navigator.share({title:n+" · Pavtex",url:u}).catch(function(){})}else{try{navigator.clipboard.writeText(u);b.textContent="Link copiado"}catch(x){prompt("Copie o link:",u)}}};
+  if(matchMedia("(prefers-color-scheme: dark)").matches)pg.style.removeProperty("--pea");else pg.style.setProperty("--pea",pf.cor)}
+function route(){var k=location.hash.slice(1),pg=document.getElementById("pg"),show=SL[k],ag=document.getElementById("agendar"),pa=k==="agendar";
+  home.forEach(function(e){e.style.display=pa?(e===ag?"":"none"):(show||e===ag?"none":"")});pg.style.display=show?"block":"none";document.body.classList.toggle("tx",show==="Texugo");document.body.classList.toggle("pv",show==="Pavão");
+  if(show){render(show);window.scrollTo(0,0)}else if(pa){window.scrollTo(0,0)}else if(k){var el=document.getElementById(k);if(el)el.scrollIntoView()}}
+window.onhashchange=route;
+document.querySelectorAll(".person").forEach(function(c){var i=PERFIL[c.dataset.who].insta,s=document.createElement("p");s.className="ig";s.textContent=i;c.insertBefore(s,c.querySelector(".ver"))});
+(function(){var pf=fotos.filter(function(x){return x.c!=="Design gráfico"}).slice(0,3);document.querySelectorAll(".pol img").forEach(function(im,i){if(pf[i]){im.src=pf[i].src;im.alt="Foto de "+pf[i].c}})})();
+var DEPOIMENTOS=[{"nome": "Mariana", "evento": "Casamento", "texto": "Foi uma experiência incrível! Desde o primeiro contato até a entrega das fotos, tudo foi feito com muito carinho e profissionalismo. Conseguiram registrar cada detalhe de um dia que ficará para sempre na nossa memória!"}, {"nome": "Fernanda", "evento": "Aniversário de 15 anos", "texto": "Amamos o resultado! As fotos ficaram lindas e conseguiram transmitir exatamente a emoção que sentimos naquele momento. Com certeza escolheríamos a PAVTEX novamente!"}, {"nome": "Camila", "evento": "Ensaio de família", "texto": "Foi muito especial ter a PAVTEX registrando esse momento. A equipe foi super atenciosa e conseguiu capturar momentos espontâneos que vamos guardar para sempre!"}, {"nome": "Juliana", "evento": "Casamento", "texto": "Uma experiência maravilhosa! Além da qualidade das fotos, gostamos muito da dedicação e do cuidado em cada detalhe. Recebemos lembranças que vamos guardar para a vida toda!"}, {"nome": "Beatriz", "evento": "Festa de 15 anos", "texto": "Recomendamos de olhos fechados! O trabalho ficou impecável, as fotos transmitiram muita emoção e cada registro nos fez reviver aquele dia especial. Obrigada por fazerem parte da nossa história!"}];
+(function(){var dl=document.getElementById("depl");
+ if(DEPOIMENTOS.length){document.getElementById("depo").style.display="";DEPOIMENTOS.forEach(function(d){var q=document.createElement("blockquote");q.textContent="\u201c"+d.texto+"\u201d";var c=document.createElement("cite");c.textContent="\u2014 "+d.nome+(d.evento?", "+d.evento:"");q.appendChild(c);dl.appendChild(q)})}
+ var pv=fotos.filter(function(x){return !x.p&&x.c!=="Design gráfico"}),pick=[pv.filter(function(x){return x.c==="Casamento"})[0],pv.filter(function(x){return x.c==="Eventos"})[2]||pv.filter(function(x){return x.c==="Eventos"})[0]].filter(Boolean),box=document.getElementById("bas");
+ pick.forEach(function(x){var w=document.createElement("div");w.className="ba";w.style.aspectRatio=x.r;
+  w.innerHTML='<img alt="Depois da edi\u00e7\u00e3o" src="'+x.src+'"><img class="antes" alt="Antes da edi\u00e7\u00e3o" src="'+x.src+'"><span class="tag t1">Antes</span><span class="tag t2">Depois</span><div class="barra"></div><input type="range" min="0" max="100" value="50" aria-label="Comparar antes e depois">';
+  w.querySelector("input").oninput=function(e){w.style.setProperty("--p",e.target.value+"%")};box.appendChild(w)})})();
+
+(function(){var v=document.querySelector("#filme video");if(!v)return;v.muted=true;var go=function(){var q=v.play();if(q&&q.catch)q.catch(function(){})};go();
+if("IntersectionObserver"in window)new IntersectionObserver(function(e){e[0].isIntersecting?go():v.pause()},{threshold:.25}).observe(v);
+v.addEventListener("click",function(){v.paused?go():v.pause()})})();
+
+(function(){
+ var a=document.querySelector('.person img[alt="Pavão"]'),b=document.querySelector('.person img[alt="Texugo"]');
+ if(a)document.getElementById("hv1").src=a.src;if(b)document.getElementById("hv2").src=b.src;
+ var tp=document.getElementById("topo");window.addEventListener("scroll",function(){tp.classList.toggle("on",window.scrollY>700&&!document.getElementById("pg").offsetHeight)},{passive:true});
+ tp.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};
+ var BASE={"Ensaio":350,"Casamento":400,"Evento":300},q=1,st=document.getElementById("stipo");
+ function sim(){var t=st.value,v=document.getElementById("sval"),n=document.getElementById("snota"),base=BASE[t],txt;
+  if(base&&q===1){v.textContent="a partir de R$ "+base;n.textContent="Transporte à parte, dependendo do local."}
+  else{v.textContent="Valor pelo WhatsApp";n.textContent=t==="XV"?"O XV tem valor combinado direto com a gente.":"O valor com os dois fotógrafos é combinado direto com a gente."}
+  txt="Oi! Vi o site e quero um orçamento. Tipo: "+t+". Fotógrafos: "+(q===1?"1":"os 2")+".";
+  document.getElementById("szap").href="https://wa.me/5547989190499?text="+encodeURIComponent(txt)}
+ st.onchange=sim;document.querySelectorAll("#sqtd .chip").forEach(function(c){c.onclick=function(){q=+c.dataset.q;document.querySelectorAll("#sqtd .chip").forEach(function(k){k.setAttribute("aria-pressed",k===c)});sim()}});sim();
+ if("IntersectionObserver"in window&&!matchMedia("(prefers-reduced-motion: reduce)").matches){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll(".wrap>section").forEach(function(s){if(s.id==="agendar"||s.id==="sobre")return;s.classList.add("rv");io.observe(s)})}
+})();
+
+route();
+
+</script>
+</body>
+</html>
